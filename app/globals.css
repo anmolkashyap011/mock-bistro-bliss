@@ -3,5 +3,26 @@
 @tailwind utilities;
 
 body {
-  
+	@apply font-default;
+    @apply bg-neutral-light;
+}
+
+h1 {
+    @apply font-playfair text-head-l text-secondary;
+}
+
+h2 {
+    @apply text-head-m text-secondary;
+}
+
+h3 {
+    @apply text-body-l-bold text-secondary;
+}
+
+p {
+    @apply text-body-s text-neutral-dark;
+}
+
+a {
+    @apply text-body-s text-primary underline;
 }

@@ -7,9 +7,6 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-		fontFamily: {
-			default: "Playfair Display, DM Sans, Roboto, sans-serif",
-		},
 		extend: {
 			colors: {
 				white: "#FFFFFF",
@@ -29,7 +26,8 @@ export default {
 				'c-xl': "1.75rem",  // 28px
 			  },
 			fontFamily: {
-				default: "Playfair Display, DM Sans, Roboto, sans-serif",
+				'playfair': ["Playfair Display", "arial", "serif"],
+				'default': ["DM Sans", "Roboto", "sans-serif"],
 			},
 			fontSize: {
 				'dis-l': ["6.25rem", { lineHeight: '6rem', fontWeight: 'normal' }],
