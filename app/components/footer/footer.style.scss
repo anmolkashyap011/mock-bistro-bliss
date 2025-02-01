@@ -1,0 +1,110 @@
+
+#footer-container {
+    @apply
+        w-full bg-neutral-dark px-4 py-20;
+
+    & p {
+        @apply text-white text-label-s max-w-80;
+    }
+
+    & > #footer {
+        @apply  
+            flex flex-col justify-center items-center gap-20
+            w-full max-w-7xl mx-auto px-4;
+
+        & > .content {
+            @apply 
+                flex flex-row justify-center md:justify-between items-start gap-12 flex-wrap
+                w-full;
+
+            & > .brand-info {
+                @apply
+                    flex-1 flex flex-col justify-center items-center lg:items-start gap-4
+                    min-w-full lg:min-w-[inherit]
+                    text-center lg:text-inherit
+                    mb-20 lg:mb-0;
+
+                & > #footer-logo {
+                    @apply
+                        flex flex-row justify-center items-center gap-2 h-full;
+                    @apply text-black no-underline;
+    
+                    & > img {
+                        @apply
+                            saturate-0 brightness-[100]
+                            h-full w-auto;
+                    }
+    
+                    & > span {
+                        @apply font-playfair font-bold italic leading-7 text-body-l text-white;
+                    }
+                }
+
+                & > p {
+                    @apply text-neutral-mid text-opacity-50 text-body-s;
+                }
+
+                & > .social-links {
+                    @apply
+                        flex flex-row justify-center items-center gap-2;
+    
+                    & > a {
+                        @apply
+                            flex justify-center items-center
+                            bg-primary rounded-full
+                            h-7 aspect-square;
+                    }
+                }
+            }
+
+            & > .links {
+                @apply flex flex-row gap-4 flex-wrap;
+
+                & > div {
+                    @apply flex flex-col gap-4
+                        min-w-40;
+                        
+                    & > ul {
+                        @apply flex flex-col w-full;
+    
+                        & > li {
+                            @apply w-full;
+
+                            & > a {
+                                @apply block text-white text-body-s no-underline leading-10
+                                    transition-colors duration-300;
+                            }
+
+                            &:hover > a {
+                                @apply text-primary;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & > .socials {
+                @apply
+                    flex flex-col gap-8;
+
+                & > div {
+                    @apply grid grid-cols-2 gap-4;
+
+                    & > img {
+                        @apply w-44 aspect-[1.14] rounded-c-md;
+                    }
+                }
+            }
+        }
+
+        & > .copyrights {
+            @apply 
+                flex flex-row justify-center items-center
+                w-full;
+            
+            & > p {
+                @apply min-w-fit text-neutral-mid text-opacity-50 text-body-s;
+            }
+        }
+    }
+}

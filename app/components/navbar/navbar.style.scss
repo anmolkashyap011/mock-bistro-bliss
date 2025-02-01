@@ -1,0 +1,177 @@
+#navbar-container {
+    @apply 
+        fixed top-0 left-0 w-full z-50;
+    @apply border-b border-b-neutral-mid;
+    
+    .contact-bar.large {
+        @apply
+            hidden md:flex w-full bg-neutral-dark h-10 items-center;
+
+        & > .wrapper {
+            @apply
+                flex flex-row justify-between items-center
+                w-full max-w-7xl mx-auto px-4;
+
+            & > .contacts {
+                @apply 
+                    flex flex-row justify-center items-center gap-6;
+
+                & > a {
+                    @apply 
+                        flex flex-row justify-center items-center gap-2
+                        text-white no-underline;
+                }
+            }
+
+            & > .social-links {
+                @apply
+                    flex flex-row justify-center items-center gap-2;
+
+                & > a {
+                    @apply
+                        flex justify-center items-center
+                        bg-surface bg-opacity-20 rounded-full
+                        h-7 aspect-square;
+                }
+            }
+        }
+    }
+
+    #navbar {
+        @apply 
+            w-full bg-neutral-light;
+
+        & > .navbar-content {
+            @apply 
+                flex flex-row justify-between items-center
+                w-full h-16 max-w-7xl mx-auto px-4 py-2;
+
+            & > #logo {
+                @apply
+                    flex flex-row justify-center items-center gap-2 h-full;
+                @apply text-black no-underline;
+
+                & > img {
+                    @apply
+                        h-full w-auto;
+                }
+
+                & > span {
+                    
+                    @apply font-playfair font-bold italic leading-7 text-body-l text-black;
+                }
+            }
+
+            & > .nav-links {
+                @apply
+                    hidden md:flex flex-row justify-center items-center gap-1;
+                
+                & > li {
+                    @apply h-full rounded-full;
+
+                    &.active {
+                        @apply
+                            bg-neutral-mid;
+                    }
+
+                    & > a {
+                        @apply 
+                            flex flex-row justify-center items-center gap-2
+                            h-full px-4 py-2 text-body-s-bold text-black no-underline;
+                    }
+                }
+            }
+
+            & > .link-button {
+                @apply hidden md:flex;
+            }
+        }
+
+        & #nav-mobile-menu {
+            @apply flex md:hidden justify-center items-center
+                h-12 aspect-square
+                p-2
+                invert;
+
+            & > img {
+                @apply w-full h-full invert;
+            }
+        }
+    }
+
+    #navbar-mobile {
+        @apply
+            fixed top-16 w-full h-0
+            hidden md:hidden flex-col gap-4
+            py-4
+            overflow-y-clip
+            bg-neutral-light
+            z-50
+            transition-all duration-300;
+
+        &.open-menu {
+            @apply flex h-auto bottom-0 overflow-y-auto;
+        }
+
+        & > .nav-links {
+            @apply flex flex-col flex-1;
+
+            & > li {
+                @apply 
+                    flex items-center h-12 px-8 
+                    bg-primary bg-opacity-0 transition-opacity duration-300;
+
+                &:hover {
+                    @apply bg-primary bg-opacity-10;
+                }
+
+                & > a {
+                    @apply text-label-s no-underline;
+                }
+            }
+        }
+
+        & > .link-button {
+            @apply mx-8;
+        }
+
+        & > .divider {
+            @apply flex flex-row items-center gap-4 mx-8;
+
+            & > span {
+                @apply flex-1 h-px bg-neutral-mid;
+            }
+
+            & > p {
+                @apply text-[12px] font-bold text-neutral-mid;
+            }
+        }
+
+        & > .contacts-container {
+            @apply 
+                flex flex-col gap-4
+                bg-secondary mx-4 rounded-c-lg p-4;
+
+            & > .contacts {
+                @apply flex flex-col gap-2;
+
+                & > a {
+                    @apply flex flex-row justify-center items-center gap-2;
+                    @apply text-body-s-bold text-white no-underline;
+                }
+            }
+
+            & > .social-links {
+                @apply
+                    flex flex-row justify-center items-center gap-2;
+
+                & > a {
+                    @apply
+                        flex justify-center items-center
+                        bg-surface bg-opacity-20 rounded-full
+                        h-7 aspect-square;
+                }
+            }
+        }
+    }
+}
