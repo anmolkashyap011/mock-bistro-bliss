@@ -38,3 +38,10 @@ a {
     @apply bg-transparent text-neutral-dark border-2 border-neutral-dark no-underline;
     @apply font-bold;
 }
+
+input, select {
+    @apply border border-neutral-mid rounded-full;
+    @apply px-4 py-3;
+    @apply text-body-s text-neutral-dark;
+    @apply outline-none;
+}
