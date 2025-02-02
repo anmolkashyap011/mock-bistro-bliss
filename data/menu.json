@@ -1,0 +1,26 @@
+[
+    {
+        "item": "Breakfast",
+        "desc": "In the new era of technology we look in the future with certainty and pride for our life.",
+        "img": "symbols/tea.svg",
+        "link": "#"
+    },
+    {
+        "item": "Main Dishes",
+        "desc": "In the new era of technology we look in the future with certainty and pride for our life.",
+        "img": "symbols/bowl.svg",
+        "link": "#"
+    },
+    {
+        "item": "Drinks",
+        "desc": "In the new era of technology we look in the future with certainty and pride for our life.",
+        "img": "symbols/glass.svg",
+        "link": "#"
+    },
+    {
+        "item": "Desert",
+        "desc": "In the new era of technology we look in the future with certainty and pride for our life.",
+        "img": "symbols/cake.svg",
+        "link": "#"
+    }
+]

@@ -1,0 +1,114 @@
+[
+    {
+        "title": "The secret tips & tricks to prepare a perfect burger & pizza for our customers",
+        "date": "January 3, 2023",
+        "img": "imgs/pexels-andra-918581 1.jpg",
+        "desc": "Lorem ipsum dolor sit amet consectetur of a adipiscing elitilmim semper adipiscing massa gravida nisi cras enim quis nibholm varius amet gravida ut facilisis neque egestas.",
+        "starred": true,
+        "highlighted": true
+    },
+    {
+        "title": "How to prepare the perfect french fries in an air fryer",
+        "date": "January 3, 2023",
+        "img": "imgs/eiliv-aceron-d5PbKQJ0Lu8-unsplash 1.jpg",
+        "desc": "",
+        "starred": false,
+        "highlighted": true
+    },
+    {
+        "title": "How to prepare delicious chicken tenders",
+        "date": "January 3, 2023",
+        "img": "imgs/pexels-nicola-barts-7937386 1.jpg",
+        "desc": "",
+        "starred": false,
+        "highlighted": true
+    },
+    {
+        "title": "7 delicious cheesecake recipes you can prepare",
+        "date": "January 3, 2023",
+        "img": "imgs/pexels-nishant-aneja-2955819 1.jpg",
+        "desc": "",
+        "starred": false,
+        "highlighted": true
+    },
+    {
+        "title": "5 great pizza restaurants you should visit this city",
+        "date": "January 3, 2023",
+        "img": "imgs/pexels-maksim-goncharenok-4773769 1.jpg",
+        "desc": "",
+        "starred": false,
+        "highlighted": true
+    },
+    {
+        "title": "How to prepare a delicious gluten free sushi",
+        "date": "January 3, 2023",
+        "img": "imgs/pexels-ivan-samkov-8951199 1.jpg",
+        "desc": "",
+        "starred": false,
+        "highlighted": false
+    },
+    {
+        "title": "Exclusive baking lessons from the pastry king",
+        "date": "January 3, 2023",
+        "img": "imgs/pexels-skyler-ewing-10307512 1.jpg",
+        "desc": "",
+        "starred": false,
+        "highlighted": false
+    },
+    {
+        "title": "How to prepare the perfect fries in an air fryer",
+        "date": "January 3, 2023",
+        "img": "imgs/pexels-suzy-hazelwood-2966196 1.jpg",
+        "desc": "",
+        "starred": false,
+        "highlighted": false
+    },
+    {
+        "title": "How to prepare delicious chicken tenders",
+        "date": "January 3, 2023",
+        "img": "imgs/image 111.png",
+        "desc": "",
+        "starred": false,
+        "highlighted": false
+    },
+    {
+        "title": "5 great cooking gadgets you can buy to save time",
+        "date": "January 3, 2023",
+        "img": "imgs/pexels-marta-dzedyshko-2067396 1.jpg",
+        "desc": "",
+        "starred": false,
+        "highlighted": false
+    },
+    {
+        "title": "The secret tips & tricks to prepare a perfect burger",
+        "date": "January 3, 2023",
+        "img": "imgs/pexels-ella-olsson-1640772 1.jpg",
+        "desc": "",
+        "starred": false,
+        "highlighted": false
+    },
+    {
+        "title": "7 delicious cheesecake recipes you can prepare",
+        "date": "January 3, 2023",
+        "img": "imgs/pexels-sebastian-coman-photography-3791088 1.jpg",
+        "desc": "",
+        "starred": false,
+        "highlighted": false
+    },
+    {
+        "title": "5 great pizza restaurants you should visit this city",
+        "date": "January 3, 2023",
+        "img": "imgs/pexels-katerina-holmes-5908226 1.jpg",
+        "desc": "",
+        "starred": false,
+        "highlighted": false
+    },
+    {
+        "title": "5 great cooking gadgets you can buy to save time",
+        "date": "January 3, 2023",
+        "img": "imgs/pexels-irina-bogodukhova-9032910 1.jpg",
+        "desc": "",
+        "starred": false,
+        "highlighted": false
+    }
+]

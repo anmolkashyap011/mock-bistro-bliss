@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Sophire Robson",
+        "location": "Los Angeles, CA",
+        "review": "Last night, we dined at place and were simply blown away. From the moment we stepped in, we were enveloped in an inviting atmosphere and greeted with warm smiles.",
+        "headline": "“The best restaurant”",
+        "pic": "imgs/Ellipse 19.png"
+    },
+    {
+        "name": "Matt Cannon",
+        "location": "San Diego, CA",
+        "review": "Place exceeded my expectations on all fronts. The ambiance was cozy and relaxed, making it a perfect venue for our anniversary dinner. Each dish was prepared and beautifully presented.",
+        "headline": "“Simply Delicious”",
+        "pic": "imgs/Image.png"
+    },
+    {
+        "name": "Andy Smith",
+        "location": "San Francisco, CA",
+        "review": "The culinary experience at place is first to none. The atmosphere is vibrant, the food - nothing short of extraordinary. The food was the highlight of our evening. Highly recommended.",
+        "headline": "“One of a kind restaurant”",
+        "pic": "imgs/Image 2.png"
+    }
+]
