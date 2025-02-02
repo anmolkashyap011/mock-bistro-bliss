@@ -97,7 +97,6 @@ export default function Home() {
 				">
 					{events.map((event) => (
 						<Link href="" className="
-							block
 							flex flex-col gap-6
 							max-w-sm
 							no-underline
