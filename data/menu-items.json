@@ -1,0 +1,61 @@
+{
+    "categories" : ["Breakfast", "Main Dishes", "Drinks", "Desserts"],
+    "items" : [
+        {
+            "item": "Fried Eggs",
+            "desc": "Made with eggs, lettuce, salt, oil and other ingredients",
+            "price": "$9.99",
+            "img": "imgs/pexels-daniela-constantini-5591664 1.jpg",
+            "category": "Breakfast"
+        },
+        {
+            "item": "Hawaiian Pizza",
+            "desc": "Made with eggs, lettuce, salt, oil and other ingredients",
+            "price": "$15.99",
+            "img": "imgs/pexels-maksim-goncharenok-4773769 1.jpg",
+            "category": "Breakfast"
+        },
+        {
+            "item": "Martinez Cocktail",
+            "desc": "Made with eggs, lettuce, salt, oil and other ingredients",
+            "price": "$7.25",
+            "img": "imgs/pexels-nadin-sh-12956424 1.jpg",
+            "category": "Drinks"
+        },
+        {
+            "item": "Butterscatch Cake",
+            "desc": "Made with eggs, lettuce, salt, oil and other ingredients",
+            "price": "$20.99",
+            "img": "imgs/pexels-ruslan-khmelevsky-7845121 1.jpg",
+            "category": "Desserts"
+        },
+        {
+            "item": "Mint Lemonade",
+            "desc": "Made with eggs, lettuce, salt, oil and other ingredients",
+            "price": "$5.89",
+            "img": "imgs/pexels-bam-awey-5335918 1.jpg",
+            "category": "Drinks"
+        },
+        {
+            "item": "Chocolate Icecream",
+            "desc": "Made with eggs, lettuce, salt, oil and other ingredients",
+            "price": "$18.05",
+            "img": "imgs/pexels-roman-odintsov-5061254 1.jpg",
+            "category": "Desserts"
+        },
+        {
+            "item": "Cheese Burger",
+            "desc": "Made with eggs, lettuce, salt, oil and other ingredients",
+            "price": "$12.55",
+            "img": "imgs/pexels-pixabay-327158 1.jpg",
+            "category": "Main Dishes"
+        },
+        {
+            "item": "Classic Waffles",
+            "desc": "Made with eggs, lettuce, salt, oil and other ingredients",
+            "price": "$12.99",
+            "img": "imgs/pexels-nicola-barts-7937386 1.jpg",
+            "category": "Main Dishes"
+        }
+    ]
+}
