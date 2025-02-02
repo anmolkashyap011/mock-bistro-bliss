@@ -1,0 +1,24 @@
+#booking-form {
+    @apply
+        flex flex-col justify-stretch gap-8
+        w-full;
+
+    & * {
+        @apply w-full;
+    }
+
+    & > div {
+        @apply
+            flex flex-row justify-stretch items-center gap-4;
+    }
+
+    & .input-wrapper {
+        @apply
+            flex flex-col gap-2
+            w-full;
+
+        & > label {
+            @apply text-label-s;
+        }
+    }
+}
