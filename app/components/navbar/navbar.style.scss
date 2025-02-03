@@ -67,7 +67,7 @@
                     hidden md:flex flex-row justify-center items-center gap-1;
                 
                 & > li {
-                    @apply h-full rounded-full;
+                    @apply h-full rounded-full transition duration-500;
 
                     &.active {
                         @apply
