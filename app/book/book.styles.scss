@@ -9,7 +9,7 @@
 
     & > div {
         @apply
-            flex flex-row justify-stretch items-center gap-4;
+            flex flex-col md:flex-row justify-stretch items-center gap-4;
     }
 
     & .input-wrapper {

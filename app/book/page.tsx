@@ -35,7 +35,7 @@ export default function() {
                     <h1 className="text-dis-l">Book A Table</h1>
                     <p className="text-body-m max-w-xl">We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
                 </div>
-                <span className="block h-[250px]">
+                <span className="block h-[350px] md:h-[250px]">
 
                 </span>
                 
@@ -44,7 +44,7 @@ export default function() {
                     bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2
                     bg-neutral-light rounded-c-lg border border-neutral-mid
                     p-8
-                    w-full max-w-2xl
+                    w-[90%] md:w-full max-w-2xl
                 ">
                     <form action="" id="booking-form">
                         <div>
@@ -84,9 +84,9 @@ export default function() {
                     </form>
                 </div>
             </section>
-            <div className="h-max min-h-xl">
+            <div className="h-max">
                 <img src="imgs/image 112.png" alt="" className="
-                    w-full h-auto
+                    w-full h-max min-h-[400px] max-h-[600px] object-cover
                 "/>
             </div>
         </main>
