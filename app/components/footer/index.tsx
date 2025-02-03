@@ -33,12 +33,12 @@ export default function Footer() {
                         <div>
                             <p>Pages</p>
                             <ul>
-                                <li><Link href="#">Home</Link></li>
-                                <li><Link href="#">About</Link></li>
-                                <li><Link href="#">Menu</Link></li>
+                                <li><Link href="/">Home</Link></li>
+                                <li><Link href="/about">About</Link></li>
+                                <li><Link href="/menu">Menu</Link></li>
                                 <li><Link href="#">Pricing</Link></li>
-                                <li><Link href="#">Blog</Link></li>
-                                <li><Link href="#">Contacts</Link></li>
+                                <li><Link href="/blogs">Blog</Link></li>
+                                <li><Link href="/contact">Contacts</Link></li>
                                 <li><Link href="#">Delivery</Link></li>
                             </ul>
                         </div>

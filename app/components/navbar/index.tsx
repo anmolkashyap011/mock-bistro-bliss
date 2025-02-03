@@ -5,12 +5,16 @@ import "./navbar.style.scss";
 
 import Contacts from "@/data/details/contacts.json";
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function NavBar() {
     const [showMenu, setShowMenu] = useState(false);
     const navBar = useRef<HTMLDivElement>(null);
     const navBarPlaceholder = useRef<HTMLSpanElement>(null);
 
+    const pathname = usePathname();
+
+    console.log(pathname);
     useEffect(() => {
         if (navBar.current == null) return;
 
@@ -24,6 +28,16 @@ export default function NavBar() {
         resizeObserver.observe(navBar.current);
         return () => resizeObserver.disconnect()
     }, [navBar, navBarPlaceholder])
+
+    useEffect(() => {
+        // Removing the active class
+        document.querySelector('.nav-links > li.active')
+            ?.classList?.remove('active');
+
+        // Adding active class to the current active link element
+        document.querySelector(`.nav-links > li > a[href="${pathname}"]`)
+            ?.parentElement?.classList?.add('active');
+    }, [pathname])
 
     return (
         <>
@@ -67,33 +81,33 @@ export default function NavBar() {
 
                         <ul className="nav-links">
                             <li className="active">
-                                <Link href="#">
+                                <Link href="/">
                                     Home
                                 </Link>
                             </li>
                             <li className="">
-                                <Link href="#">
+                                <Link href="/about">
                                     About
                                 </Link>
                             </li>
                             <li className="">
-                                <Link href="#">
+                                <Link href="/menu">
                                     Menu
                                 </Link>
                             </li>
                             <li className="">
-                                <Link href="#">
+                                <Link href="/blogs">
                                     Pages
                                 </Link>
                             </li>
                             <li className="">
-                                <Link href="#">
+                                <Link href="/contact">
                                     Contact
                                 </Link>
                             </li>
                         </ul>
 
-                        <Link href="#" className="link-button outlined">
+                        <Link href="/book" className="link-button outlined">
                             Book A Table
                         </Link>
 
@@ -107,33 +121,33 @@ export default function NavBar() {
                 <div id="navbar-mobile" className={(showMenu ? "open-menu" : "")}>
                     <ul className="nav-links">
                         <li className="active">
-                            <Link href="#">
+                            <Link href="/">
                                 Home
                             </Link>
                         </li>
                         <li className="">
-                            <Link href="#">
+                            <Link href="/about">
                                 About
                             </Link>
                         </li>
                         <li className="">
-                            <Link href="#">
+                            <Link href="/menu">
                                 Menu
                             </Link>
                         </li>
                         <li className="">
-                            <Link href="#">
+                            <Link href="/blogs">
                                 Pages
                             </Link>
                         </li>
                         <li className="">
-                            <Link href="#">
+                            <Link href="/contact">
                                 Contact
                             </Link>
                         </li>
                     </ul>
 
-                    <Link href="#" className="link-button">
+                    <Link href="/book" className="link-button">
                         Book A Table
                     </Link>
 
