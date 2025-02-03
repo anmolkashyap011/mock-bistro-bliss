@@ -21,4 +21,8 @@
             @apply text-label-s;
         }
     }
+
+    & > .input-container {
+        @apply flex-col md:flex-row;
+    }
 }

@@ -29,7 +29,7 @@ export default function() {
                     w-full max-w-2xl
                 ">
                     <form action="" id="booking-form">
-                        <div>
+                        <div className="input-container">
                             <div className="input-wrapper">
                                 <label htmlFor="name">Name</label>
                                 <input title="name" type="text" placeholder="Name"/>
@@ -48,13 +48,13 @@ export default function() {
                             <textarea title="message" name="message" placeholder="Write a Message"/>
                         </div>
                         <button title="book" type="submit" className="link-button">
-                            Book A Table
+                            Submit
                         </button>
                     </form>
                 </div>
 
                 <div className="
-                    flex flex-row justify-between gap-4
+                    flex flex-col md:flex-row justify-between gap-4
                     w-full max-w-2xl
 
                     [&_p]:max-w-52
