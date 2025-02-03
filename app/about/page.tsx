@@ -96,7 +96,7 @@ export default function Page() {
                 bg-surface
             ">
                 <div className="
-                    grid grid-cols-1 md:grid-cols-[1.25fr_1fr] gap-32
+                    grid grid-cols-1 md:grid-cols-[1.25fr_1fr] gap-16 lg:gap-32
                     auto-rows-min
                     w-full max-w-7xl mx-auto px-8
                 ">
@@ -111,7 +111,7 @@ export default function Page() {
                         </div>
                         
                         <div className="
-                            grid grid-cols-1 md:grid-cols-2 gap-8
+                            grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8
                         ">
                             <div className="
                                 flex flex-col justify-center items-center gap-4
@@ -151,9 +151,9 @@ export default function Page() {
                         </div>
                     </div>
                     <div className="
-                        relative
+                        relative row-start-1 md:row-start-auto
                         flex justify-stretch items-stretch rounded-c-md
-                        w-full h-full
+                        w-full h-full aspect-[1.5] md:aspect-auto
                         overflow-clip
                     ">
                         <img src="imgs/pexels-cottonbro-studio-4252139 1.jpg" alt="" className="
