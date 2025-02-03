@@ -41,7 +41,7 @@ export default function() {
                 </div>
 
                 <div className="
-                    flex flex-row justify-center items-center gap-4 flex-wrap
+                    flex flex-row justify-start items-center gap-2 md:gap-4 flex-wrap
                 ">
                     {categories.map((c) => (
                         <button key={c == null ? "all" : c} className={`
@@ -84,7 +84,7 @@ export default function() {
                 -my-16 py-24
             ">
                 <div className="
-                    grid grid-cols-[1fr_1.25fr] gap-16
+                    grid grid-cols-1 md:grid-cols-[1fr_1.25fr] gap-16
                     w-full max-w-7xl mx-auto px-8
                 ">
                     <div className="flex flex-col gap-4">
@@ -97,13 +97,14 @@ export default function() {
                     ">
                         {brands.map((more, i) => (
                             <div key={i} className="
-                                flex flex-row justify-center items-center gap-4
+                                flex flex-row justify-center items-center gap-4 flex-wrap
                                 w-fit
                             ">
                                 {more.map((brand, i) => (
                                     <div key={i} className={`
                                         ${ i == 1 ? "px-10" : "px-8" } py-8
                                         bg-neutral-light rounded-c-md
+                                        max-w-40 md:max-w-none
                                     `}>
                                         <img src={`brands/${brand}.svg`} alt={brand} className="
                                             w-fit h-auto
