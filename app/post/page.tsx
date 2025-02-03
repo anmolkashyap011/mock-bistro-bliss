@@ -34,7 +34,7 @@ export default function() {
 					max-w-7xl
 				">
 					{blogs.splice(2, 4).map((blog) => (
-						<div className={`
+						<div key={blog.title} className={`
 							flex flex-col
 							rounded-c-lg bg-neutral-light
 							overflow-clip
