@@ -1,0 +1,25 @@
+
+#blog-post {
+    @apply 
+        flex flex-col gap-8
+        w-full max-w-5xl mx-auto px-8;
+
+    & > h1 {
+        @apply md:text-center text-left;
+    }
+
+    & > h2 {
+        @apply 
+            mt-12;
+    }
+
+    & > ol {
+        @apply 
+            [list-style-type:auto] list-inside
+            flex flex-col gap-4;
+
+        & > li {
+            @apply list-item text-body-s text-neutral-dark font-bold;
+        }
+    }
+}
