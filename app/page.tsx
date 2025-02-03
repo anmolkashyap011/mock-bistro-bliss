@@ -160,14 +160,15 @@ export default function Home() {
 				w-full py-24 -my-20
 			">
 				<div className="
-					flex flex-row justify-between items-center gap-4
+					flex flex-col md:flex-row justify-between items-center gap-4
 					w-full max-w-7xl px-8
+					text-center md:text-left
 				">
 					<h1>Our Blogs & Articles</h1>
 					<Link href="#" className="link-button">Read All Articles</Link>
 				</div>
 				<div className="
-					grid grid-cols-[2fr_1fr_1fr] grid-rows-2 gap-4
+					grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] grid-rows-2 gap-4
 					max-w-7xl px-8
 					
 				">
