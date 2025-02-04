@@ -3,7 +3,7 @@
 import menuItems from "@/data/menu-items.json";
 import { useEffect, useState } from "react";
 
-export default function() {
+export default function MenuPage() {
     const categories = [null, ...menuItems.categories];
     const brands = [
         [ "ubereats", "grubhub", "postmates" ], 

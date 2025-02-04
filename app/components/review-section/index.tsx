@@ -12,8 +12,8 @@ export default function ReviewSection() {
                 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4
                 auto-rows-max
             ">
-                {reviews.map((review) => (
-                    <div className="
+                {reviews.map((review, i) => (
+                    <div key={i} className="
                         flex flex-col gap-8
                         bg-surface rounded-c-md
                         px-8 py-12

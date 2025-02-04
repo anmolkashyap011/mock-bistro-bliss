@@ -56,8 +56,8 @@ export default function Home() {
 					grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6
 					justify-items-stretch items-stretch
 				">
-					{menu.map((item) => (
-						<div className="
+					{menu.map((item, i) => (
+						<div key={i} className="
 							flex flex-col justify-center items-center gap-4
 							text-center
 							max-w-xs
@@ -95,8 +95,8 @@ export default function Home() {
 					justify-items-stretch items-stretch
 					w-fit
 				">
-					{events.map((event) => (
-						<Link href="" className="
+					{events.map((event, i) => (
+						<Link key={i} href="" className="
 							flex flex-col gap-6
 							max-w-sm
 							no-underline
@@ -172,8 +172,8 @@ export default function Home() {
 					max-w-7xl px-8
 					
 				">
-					{blogs.map((blog) => (
-						<div className={`
+					{blogs.map((blog, i) => (
+						<div key={i} className={`
 							flex flex-col
 							rounded-c-lg bg-neutral-light
 							overflow-clip

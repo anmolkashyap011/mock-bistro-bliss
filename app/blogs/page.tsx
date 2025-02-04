@@ -1,6 +1,6 @@
 import blogs from "@/data/blogs/blog-post.json";
 
-export default function () {
+export default function BlogPage () {
     return (
         <main className="
             flex flex-col justify-center
@@ -25,8 +25,8 @@ export default function () {
 					grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4
 					max-w-7xl
 				">
-					{blogs.map((blog) => (
-						<div className={`
+					{blogs.map((blog, i) => (
+						<div key={i} className={`
 							flex flex-col
 							rounded-c-lg bg-neutral-light
 							overflow-clip

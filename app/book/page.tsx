@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import "./book.styles.scss";
 
-export default function() {
+export default function BookPage() {
     const [dateVal, setDate] = useState('2025-01-01');
     const [timeVal, setTime] = useState('00:00');
 

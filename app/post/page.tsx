@@ -3,7 +3,7 @@ import blogs from "@/data/blogs/blog-post.json";
 
 import "./post.styles.scss";
 
-export default function() {
+export default function PostPage() {
     return (
         <main className="
             flex flex-col justify-center gap-44
@@ -60,23 +60,29 @@ export default function() {
     )
 }
 
-function printElement(object: { type: string, value: any }) {
+function printElement(object: {
+    type: string;
+    value: string;
+} | {
+    type: string;
+    value: string[];
+}) {
     switch(object.type) {
         case "h1": return (
-            <h2>{object.value}</h2>
+            <h2 key={object.value as string}>{object.value}</h2>
         )
         case "p": return (
-            <p>{object.value}</p>
+            <p key={object.value as string}>{object.value}</p>
         )
         case "ol": return (
             <ol>
-                {object.value.map((item: string) => (
-                    <li>{item}</li>
+                {(object.value as string[]).map((item: string, i: number) => (
+                    <li key={i}>{item}</li>
                 ))}
             </ol>
         )
         case "i": return (
-            <img src={object.value} alt="" />
+            <img src={object.value as string} alt="" key={object.value as string}/>
         )
         default: return
     }

@@ -2,7 +2,7 @@ import "./contact.styles.scss";
 
 import contacts from "@/data/details/contacts.json";
 
-export default function() {
+export default function ContactPage() {
     return (
         <main className="
             flex flex-col justify-center
