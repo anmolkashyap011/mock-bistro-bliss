@@ -4,7 +4,7 @@ A site for ordering and browsing food online.
 This is a demo site to showcase my skill to develop a website from the existing ui design.
 
 ## Live Demo
-[View the Live Site](mock-bistro-bliss.web.app)
+[View the Live Site](https://mock-bistro-bliss.web.app)
 
 ## Figma Design
 [View the Figma Design](https://www.figma.com/design/jZbCFSBHWu3XDMybttPbc4/Miro?node-id=0-1&t=3ksNgJ47LuNFAaGe-1)
