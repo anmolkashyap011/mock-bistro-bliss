@@ -34,14 +34,14 @@ export default function MenuPage() {
                     ">
                         {brands.map((more, i) => (
                             <div key={i} className="
-                                flex flex-row justify-center items-center gap-4 flex-wrap
-                                w-fit
+                                flex flex-row justify-center items-center gap-4 flex-wrap lg:flex-nowrap
+                                w-full
                             ">
                                 {more.map((brand, i) => (
                                     <div key={i} className={`
                                         ${ i == 1 ? "px-10" : "px-8" } py-8
                                         bg-neutral-light rounded-c-md
-                                        max-w-40 md:max-w-none
+                                        max-w-40 lg:max-w-none
                                     `}>
                                         <img src={`brands/${brand}.svg`} alt={brand} className="
                                             w-fit h-auto
