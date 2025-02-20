@@ -1,4 +1,5 @@
 import blogs from "@/data/blogs/blog-post.json";
+import Link from "next/link";
 
 export default function BlogPage () {
     return (
@@ -26,10 +27,10 @@ export default function BlogPage () {
 					max-w-7xl
 				">
 					{blogs.map((blog, i) => (
-						<div key={i} className={`
+						<Link href="/post" key={i} className={`
 							flex flex-col
 							rounded-c-lg bg-neutral-light
-							overflow-clip
+							overflow-clip no-underline
                             max-w-sm
 						`}>
 							<img src={blog.img} alt={blog.title} className={`
@@ -43,7 +44,7 @@ export default function BlogPage () {
 								<p className="date">{blog.date}</p>
 								<p className="text-body-m-bold">{blog.title}</p>
 							</div>
-						</div>
+						</Link>
 					))}
 				</div>
             </section>
