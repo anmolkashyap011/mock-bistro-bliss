@@ -25,6 +25,10 @@ p {
 
 a {
     @apply text-body-s text-primary underline;
+    @apply transition;
+}
+a:hover {
+    @apply text-secondary;
 }
 
 .link-button {
@@ -32,11 +36,19 @@ a {
     @apply bg-primary text-white no-underline;
     @apply px-4 py-2 border border-primary;
     @apply rounded-full;
+    @apply transition;
+}
+.link-button:hover {
+    @apply bg-secondary text-neutral-light;
 }
 
 .link-button.outlined {
     @apply bg-transparent text-neutral-dark border-2 border-neutral-dark no-underline;
     @apply font-bold;
+    @apply transition;
+}
+.link-button.outlined:hover {
+    @apply bg-neutral-dark bg-opacity-90 text-neutral-light;
 }
 
 input, select, textarea {
