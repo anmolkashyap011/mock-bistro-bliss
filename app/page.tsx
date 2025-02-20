@@ -173,10 +173,10 @@ export default function Home() {
 					
 				">
 					{blogs.map((blog, i) => (
-						<div key={i} className={`
+						<Link href="/post" key={i} className={`
 							flex flex-col
 							rounded-c-lg bg-neutral-light
-							overflow-clip
+							overflow-clip no-underline
 							${  blog.starred ? "row-start-1 row-span-2" : "" }
 						`}>
 							<img src={blog.img} alt={blog.title} className={`
@@ -191,7 +191,7 @@ export default function Home() {
 								<p className="text-body-m-bold">{blog.title}</p>
 								<p className={ !blog.starred ? "hidden" : "" }>{blog.desc}</p>
 							</div>
-						</div>
+						</Link>
 					))}
 				</div>
 			</section>
