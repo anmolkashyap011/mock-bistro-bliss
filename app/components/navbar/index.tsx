@@ -7,6 +7,47 @@ import Contacts from "@/data/details/contacts.json";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 
+const navLinks = [
+    { title: "Home", link: "/" },
+    { title: "About", link: "/about" },
+    { title: "Menu", link: "/menu" },
+    { title: "Pages", link: "/blogs" },
+    { title: "Contacts", link: "/contact" },
+]
+
+function ContactCard({ hide = false }: { hide?: boolean }) {
+    return (
+        <div className={`contact-card ${hide ? "hide" : ""}`}>
+            <div className="wrapper">
+                <div className="contacts">
+                    <Link href="#">
+                        <img src="icons/phone.svg" alt="phone" />
+                        <span>{Contacts.phone}</span>
+                    </Link>
+                    <Link href="#">
+                        <img src="icons/mail.svg" alt="mail" />
+                        <span>{Contacts.email}</span>
+                    </Link>
+                </div>
+                <div className="social-links">
+                    <Link href="#">
+                        <img src="icons/logo-fb-simple 2.svg" alt="facebook" />
+                    </Link>
+                    <Link href="#">
+                        <img src="icons/logo-twitter 2.svg" alt="twitter" />
+                    </Link>
+                    <Link href="#">
+                        <img src="icons/logo-instagram 1.svg" alt="instagram" />
+                    </Link>
+                    <Link href="#">
+                        <img src="icons/logo-github 1.svg" alt="github" />
+                    </Link>
+                </div>
+            </div>
+        </div>
+    )
+}
+
 export default function NavBar() {
     const [showMenu, setShowMenu] = useState(false);
     const navBar = useRef<HTMLDivElement>(null);
@@ -42,37 +83,10 @@ export default function NavBar() {
     return (
         <>
             <nav ref={navBar} id="navbar-container" className="">
-                <div className="contact-bar large">
-                    <div className="wrapper">
-                        <div className="contacts">
-                            <Link href="#">
-                                <img src="icons/phone.svg" alt="phone" />
-                                <span>{Contacts.phone}</span>
-                            </Link>
-                            <Link href="#">
-                                <img src="icons/mail.svg" alt="mail" />
-                                <span>{Contacts.email}</span>
-                            </Link>
-                        </div>
-                        <div className="social-links">
-                            <Link href="#">
-                                <img src="icons/logo-fb-simple 2.svg" alt="facebook" />
-                            </Link>
-                            <Link href="#">
-                                <img src="icons/logo-twitter 2.svg" alt="twitter" />
-                            </Link>
-                            <Link href="#">
-                                <img src="icons/logo-instagram 1.svg" alt="instagram" />
-                            </Link>
-                            <Link href="#">
-                                <img src="icons/logo-github 1.svg" alt="github" />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
 
                 { /* NavBar */ }
                 <div id="navbar">
+                    <ContactCard hide={true}/>
                     <div className="navbar-content">
                         <Link href="/" id="logo">
                             <img src="symbols/japanese-food.svg" alt="Bistro Bliss" />
@@ -80,31 +94,13 @@ export default function NavBar() {
                         </Link>
 
                         <ul className="nav-links">
-                            <li className="active">
-                                <Link href="/">
-                                    Home
-                                </Link>
-                            </li>
-                            <li className="">
-                                <Link href="/about">
-                                    About
-                                </Link>
-                            </li>
-                            <li className="">
-                                <Link href="/menu">
-                                    Menu
-                                </Link>
-                            </li>
-                            <li className="">
-                                <Link href="/blogs">
-                                    Pages
-                                </Link>
-                            </li>
-                            <li className="">
-                                <Link href="/contact">
-                                    Contact
-                                </Link>
-                            </li>
+                            {navLinks.map((link) => (
+                                <li key={link.title}>
+                                    <Link href={link.link}>
+                                        {link.title}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
 
                         <Link href="/book" className="link-button outlined">
@@ -120,31 +116,13 @@ export default function NavBar() {
                 { /* NavBar - Mobile */}
                 <div id="navbar-mobile" className={(showMenu ? "open-menu" : "")}>
                     <ul className="nav-links">
-                        <li className="active">
-                            <Link href="/">
-                                Home
-                            </Link>
-                        </li>
-                        <li className="">
-                            <Link href="/about">
-                                About
-                            </Link>
-                        </li>
-                        <li className="">
-                            <Link href="/menu">
-                                Menu
-                            </Link>
-                        </li>
-                        <li className="">
-                            <Link href="/blogs">
-                                Pages
-                            </Link>
-                        </li>
-                        <li className="">
-                            <Link href="/contact">
-                                Contact
-                            </Link>
-                        </li>
+                        {navLinks.map((link) => (
+                            <li key={link.title}>
+                                <Link href={link.link}>
+                                    {link.title}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
 
                     <Link href="/book" className="link-button">
@@ -157,32 +135,7 @@ export default function NavBar() {
                         <span></span>
                     </div>
 
-                    <div className="contacts-container">
-                        <div className="contacts">
-                            <Link href="#">
-                                <img src="icons/phone.svg" alt="phone" />
-                                <span>{Contacts.phone}</span>
-                            </Link>
-                            <Link href="#">
-                                <img src="icons/mail.svg" alt="mail" />
-                                <span>{Contacts.email}</span>
-                            </Link>
-                        </div>
-                        <div className="social-links">
-                            <Link href="#">
-                                <img src="icons/logo-fb-simple 2.svg" alt="facebook" />
-                            </Link>
-                            <Link href="#">
-                                <img src="icons/logo-twitter 2.svg" alt="twitter" />
-                            </Link>
-                            <Link href="#">
-                                <img src="icons/logo-instagram 1.svg" alt="instagram" />
-                            </Link>
-                            <Link href="#">
-                                <img src="icons/logo-github 1.svg" alt="github" />
-                            </Link>
-                        </div>
-                    </div>
+                    <ContactCard />
                 </div>
             </nav>
             <span ref={navBarPlaceholder} className="block"></span>

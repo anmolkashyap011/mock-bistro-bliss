@@ -3,18 +3,26 @@
         fixed top-0 left-0 w-full z-50;
     @apply border-b border-b-neutral-mid;
     
-    .contact-bar.large {
+    .contact-card {
+        &.hide {
+            @apply hidden md:flex;
+        }
+
         @apply
-            hidden md:flex w-full bg-neutral-dark h-10 items-center;
+            flex items-center
+            w-full h-fit md:h-10 
+            px-4 md:px-0 
+            md:bg-neutral-dark;
 
         & > .wrapper {
             @apply
-                flex flex-row justify-between items-center
-                w-full max-w-7xl mx-auto px-4;
+                flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0
+                w-full max-w-7xl mx-auto px-4 py-4 md:py-0
+                bg-neutral-dark rounded-c-md;
 
             & > .contacts {
                 @apply 
-                    flex flex-row justify-center items-center gap-6;
+                    flex flex-col md:flex-row justify-center items-center gap-2 md:gap-6;
 
                 & > a {
                     @apply 
@@ -78,6 +86,10 @@
                         @apply 
                             flex flex-row justify-center items-center gap-2
                             h-full px-4 py-2 text-body-s-bold text-black no-underline;
+
+                    }
+                    &:hover {
+                        @apply bg-neutral-mid bg-opacity-60;
                     }
                 }
             }
@@ -100,17 +112,23 @@
     }
 
     #navbar-mobile {
+        @media screen and (max-height: 600px) {
+            & {
+                @apply overflow-y-auto;
+            }
+        }
+
         @apply
-            fixed top-16 w-full h-0
-            hidden md:hidden flex-col gap-4
-            py-4
+            fixed top-16 bottom-full py-0
+            w-full h-auto
+            flex md:hidden flex-col gap-4
             overflow-y-clip
-            bg-neutral-light
-            z-50
+            bg-neutral-light border-t border-neutral-mid
+            z-50 overflow-hidden
             transition-all duration-300;
 
         &.open-menu {
-            @apply flex h-auto bottom-0 overflow-y-auto;
+            @apply bottom-0 py-4;
         }
 
         & > .nav-links {
@@ -144,33 +162,6 @@
 
             & > p {
                 @apply text-[12px] font-bold text-neutral-mid;
-            }
-        }
-
-        & > .contacts-container {
-            @apply 
-                flex flex-col gap-4
-                bg-secondary mx-4 rounded-c-lg p-4;
-
-            & > .contacts {
-                @apply flex flex-col gap-2;
-
-                & > a {
-                    @apply flex flex-row justify-center items-center gap-2;
-                    @apply text-body-s-bold text-white no-underline;
-                }
-            }
-
-            & > .social-links {
-                @apply
-                    flex flex-row justify-center items-center gap-2;
-
-                & > a {
-                    @apply
-                        flex justify-center items-center
-                        bg-surface bg-opacity-20 rounded-full
-                        h-7 aspect-square;
-                }
             }
         }
     }
