@@ -2,6 +2,7 @@ import post from "@/data/blogs/demo-post.json";
 import blogs from "@/data/blogs/blog-post.json";
 
 import "./post.styles.scss";
+import Link from "next/link";
 
 export default function PostPage() {
     return (
@@ -34,9 +35,9 @@ export default function PostPage() {
 					max-w-7xl
 				">
 					{blogs.splice(2, 4).map((blog) => (
-						<div key={blog.title} className={`
+						<Link href="/post" key={blog.title} className={`
 							flex flex-col
-							rounded-c-lg bg-neutral-light
+							rounded-c-lg bg-neutral-light no-underline
 							overflow-clip
                             max-w-sm
                             shadow-md
@@ -52,7 +53,7 @@ export default function PostPage() {
 								<p className="date">{blog.date}</p>
 								<p className="text-body-m-bold">{blog.title}</p>
 							</div>
-						</div>
+						</Link>
 					))}
 				</div>
             </section>
@@ -63,26 +64,28 @@ export default function PostPage() {
 function printElement(object: {
     type: string;
     value: string;
+    key: any;
 } | {
     type: string;
     value: string[];
+    key: any;
 }) {
     switch(object.type) {
         case "h1": return (
-            <h2 key={object.value as string}>{object.value}</h2>
+            <h2 key={object.key}>{object.value}</h2>
         )
         case "p": return (
-            <p key={object.value as string}>{object.value}</p>
+            <p key={object.key}>{object.value}</p>
         )
         case "ol": return (
-            <ol>
+            <ol key={object.key}>
                 {(object.value as string[]).map((item: string, i: number) => (
                     <li key={i}>{item}</li>
                 ))}
             </ol>
         )
         case "i": return (
-            <img src={object.value as string} alt="" key={object.value as string}/>
+            <img src={object.value as string} alt="" key={object.key}/>
         )
         default: return
     }

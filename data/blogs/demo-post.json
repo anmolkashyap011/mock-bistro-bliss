@@ -4,11 +4,13 @@
     "content": [
         {
             "type": "h1",
-            "value": "What do you need to prepare a home-made burger?"
+            "value": "What do you need to prepare a home-made burger?",
+            "key": "0"
         },
         {
             "type": "p",
-            "value": "Creating the perfect burger and pizza is an art, combining ingredients, techniques, and passion to craft dishes that truly delight the palate. Today, we'll unveil some closely guarded secrets and insider tips for mastering these beloved staples of the culinary world."
+            "value": "Creating the perfect burger and pizza is an art, combining ingredients, techniques, and passion to craft dishes that truly delight the palate. Today, we'll unveil some closely guarded secrets and insider tips for mastering these beloved staples of the culinary world.",
+            "key": "1"
         },
         {
             "type": "ol",
@@ -18,15 +20,18 @@
                 "Don’t Overwork the Meat: When forming your patties, be gentle. Overworking the meat can lead to dense, tough burgers. You want a patty that's firm enough to hold together, but not compressed.",
                 "Cooking: High heat is crucial. Whether you're grilling or pan-searing, make sure your cooking surface is hot enough to form a nice crust on the patty, sealing in those delicious juices.",
                 "Resting: Allow your cooked burgers to rest for a few minutes before serving. This lets the juices redistribute throughout the patty, ensuring a moist and flavorful bite."
-            ]
+            ],
+            "key": "2"
         },
         {
             "type": "h1",
-            "value": "What are the right ingredients to make it delicious?"
+            "value": "What are the right ingredients to make it delicious?",
+            "key": "3"
         },
         {
             "type": "p",
-            "value": "Creating the perfect burger and pizza is an art, combining ingredients, techniques, and passion to craft dishes that truly delight the palate. Today, we'll unveil some closely guarded secrets and insider tips for mastering these beloved staples of the culinary world."
+            "value": "Creating the perfect burger and pizza is an art, combining ingredients, techniques, and passion to craft dishes that truly delight the palate. Today, we'll unveil some closely guarded secrets and insider tips for mastering these beloved staples of the culinary world.",
+            "key": "4"
         },
         {
             "type": "ol",
@@ -36,19 +41,23 @@
                 "Don’t Overwork the Meat: When forming your patties, be gentle. Overworking the meat can lead to dense, tough burgers. You want a patty that's firm enough to hold together, but not compressed.",
                 "Cooking: High heat is crucial. Whether you're grilling or pan-searing, make sure your cooking surface is hot enough to form a nice crust on the patty, sealing in those delicious juices.",
                 "Resting: Allow your cooked burgers to rest for a few minutes before serving. This lets the juices redistribute throughout the patty, ensuring a moist and flavorful bite."
-            ]
+            ],
+            "key": "5"
         },
         {
             "type": "i",
-            "value": "imgs/pexels-suzy-hazelwood-2966196 1.jpg"
+            "value": "imgs/pexels-suzy-hazelwood-2966196 1.jpg",
+            "key": "6"
         },
         {
             "type": "h1",
-            "value": "What are the right ingredients to make it delicious?"
+            "value": "What are the right ingredients to make it delicious?",
+            "key": "7"
         },
         {
             "type": "p",
-            "value": "Proin faucibus nec mauris a sodales, sed elementum mi tincidunt. Sed eget viverra egestas nisi in consequat. Fusce sodales augue a accumsa Cras sollicitudin, le ligula, porttitor eu, consequat vitae, eleifend ac, enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing praesent velit viverra sit semper lorem eu cursus ve of all hendrerit elementum morbi curabitur etiam nibh justo, lorem aliquet donec sed sit mi dignissim at ante massa mattis magna sit amet purus gravida quis blandit turpis.."
+            "value": "Proin faucibus nec mauris a sodales, sed elementum mi tincidunt. Sed eget viverra egestas nisi in consequat. Fusce sodales augue a accumsa Cras sollicitudin, le ligula, porttitor eu, consequat vitae, eleifend ac, enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing praesent velit viverra sit semper lorem eu cursus ve of all hendrerit elementum morbi curabitur etiam nibh justo, lorem aliquet donec sed sit mi dignissim at ante massa mattis magna sit amet purus gravida quis blandit turpis..",
+            "key": "8"
         }
     ]
 }
